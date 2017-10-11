@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My pet rock</title>
+  <script type="text/javascript">
+    function touchRock(){
+      var userName = prompt("What is your name?","Enter your name here");
+     
+      if (userName = 'Enter your name here'){ 
+        alert("nice to meet you ashole")
+        document.getElementById('rockImg').src = "angryIrock.png" 
+     else(){
+        alert ("Nice to meet you,"  + userName + ".")
+        document.getElementById('rockImg') .src = "happyRock.png"
+     }
+      }
+    }
+  </script>
+   
+</head>
+<body onload="alert('Hello I am your pet rock');">
+  <div style="margin-top: 100px; text-align: center;"> 
+    <img id="rockImg" src="rock.png" alt="rock" style="cursor: pointer;" onclick="touchRock();">
+  </div>
+</body>
+</html>
